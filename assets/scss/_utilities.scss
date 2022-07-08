@@ -36,9 +36,10 @@ $utilities: map-merge(
         values: map-merge(
           map-get(map-get($utilities, 'background-color'), 'values'),
           (
-            'secondary': $gray-100,
-            'dark':      $gray-900,
-            'black':     $black
+            'secondary':  $gray-100,
+            'light-blue': $light-blue,
+            'dark':       $gray-900,
+            'black':      $black
           )
         )
       )

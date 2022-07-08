@@ -32,6 +32,7 @@ $black:                       #000 !default;
 // Theme colors
 $primary:                     #1e5184 !default;
 $secondary:                   #70c046 !default;
+$light-blue:                  #7585a9 !default;
 $info:		                    #4c82f7 !default;
 $success:                     #22c55e !default;
 $warning:                     #ffba08 !default;
@@ -43,6 +44,7 @@ $dark:                        $gray-900 !default;
 $theme-colors: (
   'primary':    $primary,
   'secondary':  $secondary,
+  'light-blue':  $light-blue,
   'success':    $success,
   'info':       $info,
   'warning':    $warning,
