@@ -2,23 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Silicon | About v.1</title>
+    <title>CEZAP | Centar za zaštitu potrošača Crne Gore</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Silicon - Multipurpose Technology Bootstrap Template">
-    <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
-    <meta name="author" content="Createx Studio">
+    <meta name="description" content="CEZAP | Centar za zaštitu potrošača Crne Gore">
+    <meta name="keywords" content="cezap, zaštita potrošača crne gore, potrošač, račun, reklamacija, korisnik, klijent, podgorica, crna gora, zaštita, prijava problema, roba, neispravnost, neregularnost">
+    <meta name="author" content="Gondor Produkcija">
 
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicon and Touch Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/cezap-logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/cezap-logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/cezap-logo.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
     <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1">
-    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <link rel="shortcut icon" href="assets/img/cezap-logo.png">
     <meta name="msapplication-TileColor" content="#080032">
     <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
@@ -26,178 +26,113 @@
     <!-- Vendor Styles -->
     <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css"/>
     <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css"/>
 
     <!-- Main Theme Styles + Bootstrap -->
     <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
-
-    <!-- Page loading styles -->
-    <style>
-      .page-loading {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        -webkit-transition: all .4s .2s ease-in-out;
-        transition: all .4s .2s ease-in-out;
-        background-color: #fff;
-        opacity: 0;
-        visibility: hidden;
-        z-index: 9999;
-      }
-      .dark-mode .page-loading {
-        background-color: #0b0f19;
-      }
-      .page-loading.active {
-        opacity: 1;
-        visibility: visible;
-      }
-      .page-loading-inner {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        -webkit-transform: translateY(-50%);
-        transform: translateY(-50%);
-        -webkit-transition: opacity .2s ease-in-out;
-        transition: opacity .2s ease-in-out;
-        opacity: 0;
-      }
-      .page-loading.active > .page-loading-inner {
-        opacity: 1;
-      }
-      .page-loading-inner > span {
-        display: block;
-        font-size: 1rem;
-        font-weight: normal;
-        color: #9397ad;
-      }
-      .dark-mode .page-loading-inner > span {
-        color: #fff;
-        opacity: .6;
-      }
-      .page-spinner {
-        display: inline-block;
-        width: 2.75rem;
-        height: 2.75rem;
-        margin-bottom: .75rem;
-        vertical-align: text-bottom;
-        border: .15em solid #b4b7c9;
-        border-right-color: transparent;
-        border-radius: 50%;
-        -webkit-animation: spinner .75s linear infinite;
-        animation: spinner .75s linear infinite;
-      }
-      .dark-mode .page-spinner {
-        border-color: rgba(255,255,255,.4);
-        border-right-color: transparent;
-      }
-      @-webkit-keyframes spinner {
-        100% {
-          -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-        }
-      }
-      @keyframes spinner {
-        100% {
-          -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-        }
-      }
-    </style>
-
-    <!-- Theme mode -->
-    <script>
-      let mode = window.localStorage.getItem('mode'),
-          root = document.getElementsByTagName('html')[0];
-      if (mode !== null && mode === 'dark') {
-        root.classList.add('dark-mode');
-      } else {
-        root.classList.remove('dark-mode');
-      }
-    </script>
-
-    <!-- Page loading scripts -->
-    <script>
-      (function () {
-        window.onload = function () {
-          const preloader = document.querySelector('.page-loading');
-          preloader.classList.remove('active');
-          setTimeout(function () {
-            preloader.remove();
-          }, 1000);
-        };
-      })();
-    </script>
   </head>
 
 
   <!-- Body -->
   <body>
-
-    <!-- Page loading spinner -->
-    <div class="page-loading active">
-      <div class="page-loading-inner">
-        <div class="page-spinner"></div><span>Loading...</span>
-      </div>
-    </div>
-
-
-    <!-- Page wrapper for sticky footer -->
     <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
     <main class="page-wrapper">
 
 
       <!-- Navbar -->
       <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
-      <header class="header navbar navbar-expand-lg position-absolute navbar-sticky">
+      <header class="header navbar navbar-expand-lg bg-light">
         <div class="container px-3">
           <a href="index.html" class="navbar-brand pe-3">
-            <img src="assets/img/logo.svg" width="47" alt="Silicon">
-            Silicon
+            <img src="assets/img/cezap-logo.png" width="200" alt="cezap">
           </a>
           <div id="navbarNav" class="offcanvas offcanvas-end">
             <div class="offcanvas-header border-bottom">
-              <h5 class="offcanvas-title">Menu</h5>
+              <h5 class="offcanvas-title text-green">CEZAP</h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+
+                <li><a href="index.html" class="nav-link">Naslovna</a></li>
+
                 <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Landings</a>
-                  <div class="dropdown-menu p-0">
-                    <div class="d-lg-flex">
-                      <div class="mega-dropdown-column bg-position-center bg-repeat-0 bg-size-cover rounded-3 rounded-end-0" style="background-image: url(assets/img/landings.jpg); margin: -1px;"></div>
-                      <div class="mega-dropdown-column pt-lg-3 pb-lg-4">
-                        <ul class="list-unstyled mb-0">
-                          <li><a href="index.html" class="dropdown-item">Template Intro Page</a></li>
-                          <li><a href="landing-mobile-app-showcase-v1.html" class="dropdown-item">Mobile App Showcase v.1</a></li>
-                          <li><a href="landing-mobile-app-showcase-v2.html" class="dropdown-item">Mobile App Showcase v.2</a></li>
-                          <li><a href="landing-saas-v1.html" class="dropdown-item">SaaS v.1</a></li>
-                          <li><a href="landing-saas-v2.html" class="dropdown-item">SaaS v.2</a></li>
-                          <li><a href="landing-saas-v3.html" class="dropdown-item">SaaS v.3</a></li>
-                          <li><a href="landing-financial.html" class="dropdown-item">Financial Consulting</a></li>
-                          <li><a href="landing-online-courses.html" class="dropdown-item">Online Courses</a></li>
-                        </ul>
-                      </div>
-                      <div class="mega-dropdown-column pt-lg-3 pb-lg-4">
-                        <ul class="list-unstyled mb-0">
-                          <li><a href="landing-medical.html" class="dropdown-item">Medical</a></li>
-                          <li><a href="landing-software-company.html" class="dropdown-item">IT (Software) Company</a></li>
-                          <li><a href="landing-conference.html" class="dropdown-item">Conference</a></li>
-                          <li><a href="landing-digital-agency.html" class="dropdown-item">Digital Agency</a></li>
-                          <li><a href="landing-blog.html" class="dropdown-item">Blog Homepage</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Fer sa potrošačem</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="account-details.html" class="dropdown-item">Account Details</a></li>
+                    <li><a href="account-security.html" class="dropdown-item">Security</a></li>
+                    <li><a href="account-notifications.html" class="dropdown-item">Notifications</a></li>
+                    <li><a href="account-messages.html" class="dropdown-item">Messages</a></li>
+                    <li><a href="account-saved-items.html" class="dropdown-item">Saved Items</a></li>
+                    <li><a href="account-collections.html" class="dropdown-item">My Collections</a></li>
+                    <li><a href="account-payment.html" class="dropdown-item">Payment Details</a></li>
+                    <li><a href="account-signin.html" class="dropdown-item">Sign In</a></li>
+                    <li><a href="account-signup.html" class="dropdown-item">Sign Up</a></li>
+                  </ul>
                 </li>
+
                 <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Online rješavanje spora</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="account-details.html" class="dropdown-item">Account Details</a></li>
+                    <li><a href="account-security.html" class="dropdown-item">Security</a></li>
+                    <li><a href="account-notifications.html" class="dropdown-item">Notifications</a></li>
+                    <li><a href="account-messages.html" class="dropdown-item">Messages</a></li>
+                    <li><a href="account-saved-items.html" class="dropdown-item">Saved Items</a></li>
+                    <li><a href="account-collections.html" class="dropdown-item">My Collections</a></li>
+                    <li><a href="account-payment.html" class="dropdown-item">Payment Details</a></li>
+                    <li><a href="account-signin.html" class="dropdown-item">Sign In</a></li>
+                    <li><a href="account-signup.html" class="dropdown-item">Sign Up</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Prava potrošača</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="account-details.html" class="dropdown-item">Account Details</a></li>
+                    <li><a href="account-security.html" class="dropdown-item">Security</a></li>
+                    <li><a href="account-notifications.html" class="dropdown-item">Notifications</a></li>
+                    <li><a href="account-messages.html" class="dropdown-item">Messages</a></li>
+                    <li><a href="account-saved-items.html" class="dropdown-item">Saved Items</a></li>
+                    <li><a href="account-collections.html" class="dropdown-item">My Collections</a></li>
+                    <li><a href="account-payment.html" class="dropdown-item">Payment Details</a></li>
+                    <li><a href="account-signin.html" class="dropdown-item">Sign In</a></li>
+                    <li><a href="account-signup.html" class="dropdown-item">Sign Up</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projekti</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="account-details.html" class="dropdown-item">Account Details</a></li>
+                    <li><a href="account-security.html" class="dropdown-item">Security</a></li>
+                    <li><a href="account-notifications.html" class="dropdown-item">Notifications</a></li>
+                    <li><a href="account-messages.html" class="dropdown-item">Messages</a></li>
+                    <li><a href="account-saved-items.html" class="dropdown-item">Saved Items</a></li>
+                    <li><a href="account-collections.html" class="dropdown-item">My Collections</a></li>
+                    <li><a href="account-payment.html" class="dropdown-item">Payment Details</a></li>
+                    <li><a href="account-signin.html" class="dropdown-item">Sign In</a></li>
+                    <li><a href="account-signup.html" class="dropdown-item">Sign Up</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">CEZAP</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="about-v1.html" class="dropdown-item">O nama</a></li>
+                    <li><a href="account-details.html" class="dropdown-item">Account Details</a></li>
+                    <li><a href="account-security.html" class="dropdown-item">Security</a></li>
+                    <li><a href="account-notifications.html" class="dropdown-item">Notifications</a></li>
+                    <li><a href="account-messages.html" class="dropdown-item">Messages</a></li>
+                    <li><a href="account-saved-items.html" class="dropdown-item">Saved Items</a></li>
+                    <li><a href="account-collections.html" class="dropdown-item">My Collections</a></li>
+                    <li><a href="account-payment.html" class="dropdown-item">Payment Details</a></li>
+                    <li><a href="account-signin.html" class="dropdown-item">Sign In</a></li>
+                    <li><a href="account-signup.html" class="dropdown-item">Sign Up</a></li>
+                  </ul>
+                </li>
+
+                <!-- <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                   <div class="dropdown-menu">
                     <div class="d-lg-flex pt-lg-3">
                       <div class="mega-dropdown-column">
@@ -254,48 +189,25 @@
                       </div>
                     </div>
                   </div>
-                </li>
-                <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Account</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="account-details.html" class="dropdown-item">Account Details</a></li>
-                    <li><a href="account-security.html" class="dropdown-item">Security</a></li>
-                    <li><a href="account-notifications.html" class="dropdown-item">Notifications</a></li>
-                    <li><a href="account-messages.html" class="dropdown-item">Messages</a></li>
-                    <li><a href="account-saved-items.html" class="dropdown-item">Saved Items</a></li>
-                    <li><a href="account-collections.html" class="dropdown-item">My Collections</a></li>
-                    <li><a href="account-payment.html" class="dropdown-item">Payment Details</a></li>
-                    <li><a href="account-signin.html" class="dropdown-item">Sign In</a></li>
-                    <li><a href="account-signup.html" class="dropdown-item">Sign Up</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a href="components/typography.html" class="nav-link">UI Kit</a>
-                </li>
-                <li class="nav-item">
-                  <a href="docs/getting-started.html" class="nav-link">Docs</a>
-                </li>
+                </li> -->
+
+                <!-- <li class="nav-item"><a href="components/typography.html" class="nav-link">UI Kit</a></li> -->
+
+                <!-- <li class="nav-item"><a href="docs/getting-started.html" class="nav-link">Docs</a></li> -->
               </ul>
-            </div>
+
+            </div> 
             <div class="offcanvas-header border-top">
-              <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary w-100" target="_blank" rel="noopener">
-                <i class="bx bx-cart fs-4 lh-1 me-1"></i>
-                &nbsp;Buy now
+              <a href="kontakt.html" class="btn btn-primary text-white w-100" target="_blank" rel="noopener">
+                KONTAKT
               </a>
             </div>      
           </div>
-          <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
-            <input type="checkbox" class="form-check-input" id="theme-mode">
-            <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
-            <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
-          </div>
+      
           <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" target="_blank" rel="noopener">
-            <i class="bx bx-cart fs-5 lh-1 me-1"></i>
-            &nbsp;Buy now
-          </a>
+          <a href="kontakt.html" class="btn btn-primary text-white text-uppercase btn-md fs-sm rounded d-none d-lg-inline-flex" target="_blank" rel="noopener">Kontakt</a>
         </div>
       </header>
 
@@ -313,33 +225,23 @@
         <div class="container position-relative zindex-5 pt-5">
           <div class="row">
             <div class="col-lg-6">
-              
-              <!-- Breadcrumb -->
-              <nav class="pt-md-2 pt-lg-3 pb-4 pb-md-5 mb-xl-4" aria-label="breadcrumb">
-                <ol class="breadcrumb mb-0">
-                  <li class="breadcrumb-item">
-                    <a href="index.html"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
-                  </li>
-                  <li class="breadcrumb-item active" aria-current="page">About v.1</li>
-                </ol>
-              </nav>
 
               <!-- Text -->
-              <h1 class="pb-2 pb-md-3">About Silicon</h1>
-              <p class="fs-xl pb-4 mb-1 mb-md-2 mb-lg-3" style="max-width: 526px;">We are a dedicated team of passionate product managers, full stack developers, UX/UI designers, QA engineers and marketing experts helping businesses of every size — from new startups to public companies — launch their projects using our software.</p>
-              <img src="assets/img/about/clutch-dark.png" class=" d-dark-mode-none" width="175" alt="Clutch">
-              <img src="assets/img/about/clutch-light.png" class="d-none d-dark-mode-block" width="175" alt="Clutch">
-              <div class="row row-cols-3 pt-4 pt-md-5 mt-2 mt-xl-4">
+              <h1 class="pb-2 text-success pb-md-3">CEZAP</h1>
+              <p class="fs-xl pb-4 mb-1 mb-md-2 mb-lg-3 text-primary" style="max-width: 526px;">Centar za zaštitu potrošača postoji od 1999. godine i aktivno radi na poboljšanju njihovog položaja u Crnoj Gori, kao nevladina, neprofitna i nepolitička organizacija, čiji je osnovni cilj zaštita potrošača u Crnoj Gori, prema smjernicama iz rezolucije UN.</p>
+              <!-- <img src="assets/img/about/clutch-dark.png" class=" d-dark-mode-none" width="175" alt="Clutch">
+              <img src="assets/img/about/clutch-light.png" class="d-none d-dark-mode-block" width="175" alt="Clutch"> -->
+              <div class="row row-cols-3 pt-2 pt-md-3 mt-2 mt-xl-2">
                 <div class="col">
-                  <h3 class="h2 mb-2">2,480</h3>
-                  <p class="mb-0"><strong>Remote</strong> Sales Experts</p>
+                  <h3 class="h2 mb-2 text-secondary">2,480</h3>
+                  <p class="mb-0"><strong>Završenih</strong> projekata</p>
                 </div>
                 <div class="col">
-                  <h3 class="h2 mb-2">760</h3>
+                  <h3 class="h2 mb-2 text-secondary">760</h3>
                   <p class="mb-0"><strong>New Clients</strong> per Month</p>
                 </div>
                 <div class="col">
-                  <h3 class="h2 mb-2">1,200</h3>
+                  <h3 class="h2 mb-2 text-secondary">1,200</h3>
                   <p class="mb-0"><strong>Requests</strong> per Week</p>
                 </div>
               </div>
@@ -362,56 +264,42 @@
         </div>
       </section>
 
-      
-      <!-- Benefits (features) -->
-      <section class="container mt-3 mb-5 pt-lg-5" id="benefits">
-        <div class="swiper pt-3" data-swiper-options='{
-          "slidesPerView": 1,
-          "pagination": {
-            "el": ".swiper-pagination",
-            "clickable": true
-          },
-          "breakpoints": {
-            "500": {
-              "slidesPerView": 2
-            },
-            "991": {
-              "slidesPerView": 3
-            }
-          }
-        }'>
-          <div class="swiper-wrapper pt-4">
 
-            <!-- Item -->
-            <div class="swiper-slide border-end-lg px-2">
-              <div class="text-center">
-                <img src="assets/img/landing/digital-agency/icons/idea.svg" width="48" alt="Bulb icon" class="d-block mb-4 mx-auto">
-                <h4 class="mb-2 pb-1">Creative Solutions</h4>
-                <p class="mx-auto" style="max-width: 336px;">Sed morbi nulla pulvinar lectus tempor vel euismod accumsan.</p>
-              </div>
+      <!-- DJELATNOSI -->
+      <section class="container pb-5 mt-5 pt-4 mb-2 mb-md-4 mb-lg-5">
+        <h2 class="h1 text-center text-primary pt-1 pt-xl-2 mb-4">Djelatnosti <span class="text-secondary">CEZAP-a</span></h2>
+        <p class="fs-lg text-center pb-4 mb-2 mb-lg-3"> Dugoročni programi na kojima centar za zaštitu potrošača radi su:</p>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5 g-4 pb-xl-3">
+          <div class="col text-center border-end">
+            <div class="card d-table border-0 rounded-circle shadow-sm p-3 mx-auto mb-4">
+              <img src="assets/img/landing/software-company/features/01.svg" width="32" alt="Icon">
             </div>
-
-            <!-- Item -->
-            <div class="swiper-slide border-end-lg px-2">
-              <div class="text-center">
-                <img src="assets/img/landing/digital-agency/icons/award.svg" width="48" alt="Award icon" class="d-block mb-4 mx-auto">
-                <h4 class="mb-2 pb-1">Award Winning</h4>
-                <p class="mx-auto" style="max-width: 336px;">Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet.</p>
-              </div>
-            </div>
-
-            <!-- Item -->
-            <div class="swiper-slide px-2">
-              <div class="text-center">
-                <img src="assets/img/landing/digital-agency/icons/team.svg" width="48" alt="Team icon" class="d-block mb-4 mx-auto">
-                <h4 class="mb-2 pb-1">Team of Professionals</h4>
-                <p class="mx-auto" style="max-width: 336px;">Nam venenatis urna aenean quis feugiat et senectus turpis.</p>
-              </div>
-            </div>
+            <h3 class="h5 text-primary mb-2 mb-lg-0">Unapređenje zakonodavstva u oblasti zaštite potrošača</h3>
           </div>
-
-          <!-- Pagination (bullets) -->
-          <div class="swiper-pagination position-relative pt-2 pt-sm-3 mt-4"></div>
+          <div class="col text-center border-end">
+            <div class="card d-table border-0 rounded-circle shadow-sm p-3 mx-auto mb-4">
+              <img src="assets/img/landing/software-company/features/02.svg" width="32" alt="Icon">
+            </div>
+            <h3 class="h5 text-primary mb-2 mb-lg-0">Obrazovanje i informisanje potrošača</h3>
+          </div>
+          <div class="col text-center border-end">
+            <div class="card d-table border-0 rounded-circle shadow-sm p-3 mx-auto mb-4">
+              <img src="assets/img/landing/software-company/features/02.svg" width="32" alt="Icon">
+            </div>
+            <h3 class="h5 text-primary mb-2 mb-lg-0">Povezivanje sa međunarodnim organizacijama</h3>
+          </div>
+          <div class="col text-center border-end">
+            <div class="card d-table border-0 rounded-circle shadow-sm p-3 mx-auto mb-4">
+              <img src="assets/img/landing/software-company/features/03.svg" width="32" alt="Icon">
+            </div>
+            <h3 class="h5 text-primary mb-2 mb-lg-0">Podrška i pomoć potrošačima pri rješavanju problema iz oblasti njihovih prava</h3>
+          </div>
+          <div class="col text-center">
+            <div class="card d-table border-0 rounded-circle shadow-sm p-3 mx-auto mb-4">
+              <img src="assets/img/landing/software-company/features/04.svg" width="32" alt="Icon">
+            </div>
+            <h3 class="h5 text-primary mb-2 mb-lg-0">Unaprijeđenje zakonodavstva u oblasti zaštite potrošača</h3>
+          </div>
         </div>
       </section>
 
@@ -420,12 +308,38 @@
       <section class="container text-center pb-5 mt-n2 mt-md-0 mb-md-2 mb-lg-4">
         <div class="position-relative rounded-3 overflow-hidden">
           <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center zindex-5">
-            <a href="https://www.youtube.com/watch?v=zPo5ZaH6sW8" class="btn btn-video btn-icon btn-xl stretched-link bg-white" data-bs-toggle="video">
-              <i class="bx bx-play"></i>
+            <a href="https://www.youtube.com/watch?v=zPo5ZaH6sW8" class="text-secondary btn btn-video btn-icon btn-xl stretched-link bg-white" data-bs-toggle="video">
+              <i class="text-secondary bx bx-play"></i>
             </a>
           </div>
           <span class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-35"></span>
           <img src="assets/img/landing/digital-agency/cover.jpg" class="d-block w-100" alt="Cover image">
+        </div>
+      </section>
+
+
+      <!-- Unaprijeđenje zakonodavstva -->
+      <section class="container pb-5 mb-md-2 mb-lg-4">
+        <h2 class="border-bottom text-primary pb-4">Unaprijeđenje zakonodavstva</h2>
+        <div class="row pt-2 pt-md-3">
+          <div class="col-md-6">
+            <p class="text-primary fs-md pe-lg-4 mb-1 mb-lg-4">U okviru programa unapređenja zakonodavstva u oblasti zaštite potrošača CEZAP je napravio prvi i nezaobilazan korak aktivnim učešćem u izradi Predloga Zakona o zaštiti potrošača, i konstantno vršio pritisak na državne organe da se Zakon što prije donese i time mnoga pitanja, koja se odnose na pravnu zaštitu potrošača, pojasne i riješe. Nakon donošenja Zakona CEZAP je aktivno učestvovao i učestvuje u njegovoj implementaciji.</p>
+          </div>
+          <div class="col-md-6">
+            <p class="text-primary fs-md ps-lg-4 mb-1 mb-lg-4">Na osnovu ovog zakona Vlada je usvojila tri nacionalna programa zaštite potrošača (NPZP) sa akcionim planovima realizaceije za periode: 2008-2010; 2010-2012 i 2012-2015. godina u čijim izradama i realizaciji je CEZAP aktivno učestvovao i učestvuje, kao redovan član međusektorske vladine radne grupe, zadužene za izradu i praćenje realizacije programa. U Arbitražnom odboru, tijelu za vansudsko rješavanje sporova, osnovanom na osnovu Zakona o zaštiti potrošača pola članova su predstavnici organizacija za zaštitu potrošača.</p>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Obrazovanje i informisanje potrošača -->
+      <section class="container pb-5 mb-md-2 mb-lg-4">
+        <h2 class="border-bottom text-primary pb-4">Obrazovanje i informisanje potrošača</h2>
+        <div class="row pt-2 pt-md-3">
+          <div class="col-md-12">
+            <p class="text-primary fs-md pe-lg-4 mb-1 mb-lg-4">Obrazovanje i informisanje potrošača je jedan veoma dugotrajan proces i mora mu se prići na jedini mogući način, a to je permanentna edukacija i informisanje po pitanjima koja se odnose na rješavanje problema na koje potrošači nailaze. Na tom poslu CEZAP radi od samog osnivanja kroz različite edukativne kampanje, razne seminare, TV debate, radio emisije, putem tekstova i obavještenja u štampanim medijumima, konferencija za štampu.</p>
+            <p class="text-primary fs-md pe-lg-4 mb-1 mb-lg-4">Primjera radi navešćemo dvije veće i zapažene edukativno informativne kampanje koje se odnose na aktuelna pitanja iz oblasti prava i ostvarivanja prava potrošača, a to su:        </p>
+          </div>
         </div>
       </section>
 
