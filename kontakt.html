@@ -2,23 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Silicon | Contacts v.2</title>
+    <title>CEZAP | Centar za zaštitu potrošača Crne Gore</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Silicon - Multipurpose Technology Bootstrap Template">
-    <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
-    <meta name="author" content="Createx Studio">
+    <meta name="description" content="CEZAP | Centar za zaštitu potrošača Crne Gore">
+    <meta name="keywords" content="cezap, zaštita potrošača crne gore, potrošač, račun, reklamacija, korisnik, klijent, podgorica, crna gora, zaštita, prijava problema, roba, neispravnost, neregularnost">
+    <meta name="author" content="Gondor Produkcija">
 
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicon and Touch Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/cezap-logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/cezap-logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/cezap-logo.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
     <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1">
-    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <link rel="shortcut icon" href="assets/img/cezap-logo.png">
     <meta name="msapplication-TileColor" content="#080032">
     <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
@@ -28,174 +28,110 @@
 
     <!-- Main Theme Styles + Bootstrap -->
     <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
-
-    <!-- Page loading styles -->
-    <style>
-      .page-loading {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        -webkit-transition: all .4s .2s ease-in-out;
-        transition: all .4s .2s ease-in-out;
-        background-color: #fff;
-        opacity: 0;
-        visibility: hidden;
-        z-index: 9999;
-      }
-      .dark-mode .page-loading {
-        background-color: #0b0f19;
-      }
-      .page-loading.active {
-        opacity: 1;
-        visibility: visible;
-      }
-      .page-loading-inner {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        -webkit-transform: translateY(-50%);
-        transform: translateY(-50%);
-        -webkit-transition: opacity .2s ease-in-out;
-        transition: opacity .2s ease-in-out;
-        opacity: 0;
-      }
-      .page-loading.active > .page-loading-inner {
-        opacity: 1;
-      }
-      .page-loading-inner > span {
-        display: block;
-        font-size: 1rem;
-        font-weight: normal;
-        color: #9397ad;
-      }
-      .dark-mode .page-loading-inner > span {
-        color: #fff;
-        opacity: .6;
-      }
-      .page-spinner {
-        display: inline-block;
-        width: 2.75rem;
-        height: 2.75rem;
-        margin-bottom: .75rem;
-        vertical-align: text-bottom;
-        border: .15em solid #b4b7c9;
-        border-right-color: transparent;
-        border-radius: 50%;
-        -webkit-animation: spinner .75s linear infinite;
-        animation: spinner .75s linear infinite;
-      }
-      .dark-mode .page-spinner {
-        border-color: rgba(255,255,255,.4);
-        border-right-color: transparent;
-      }
-      @-webkit-keyframes spinner {
-        100% {
-          -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-        }
-      }
-      @keyframes spinner {
-        100% {
-          -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-        }
-      }
-    </style>
-
-    <!-- Theme mode -->
-    <script>
-      let mode = window.localStorage.getItem('mode'),
-          root = document.getElementsByTagName('html')[0];
-      if (mode !== null && mode === 'dark') {
-        root.classList.add('dark-mode');
-      } else {
-        root.classList.remove('dark-mode');
-      }
-    </script>
-
-    <!-- Page loading scripts -->
-    <script>
-      (function () {
-        window.onload = function () {
-          const preloader = document.querySelector('.page-loading');
-          preloader.classList.remove('active');
-          setTimeout(function () {
-            preloader.remove();
-          }, 1000);
-        };
-      })();
-    </script>
   </head>
 
 
   <!-- Body -->
   <body>
 
-    <!-- Page loading spinner -->
-    <div class="page-loading active">
-      <div class="page-loading-inner">
-        <div class="page-spinner"></div><span>Loading...</span>
-      </div>
-    </div>
-
-
-    <!-- Page wrapper for sticky footer -->
     <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
     <main class="page-wrapper">
 
 
       <!-- Navbar -->
-      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
-      <header class="header navbar navbar-expand-lg position-absolute navbar-sticky">
+      <header class="header navbar navbar-expand-lg bg-light">
         <div class="container px-3">
           <a href="index.html" class="navbar-brand pe-3">
-            <img src="assets/img/logo.svg" width="47" alt="Silicon">
-            Silicon
+            <img src="assets/img/cezap-logo.png" width="200" alt="cezap">
           </a>
           <div id="navbarNav" class="offcanvas offcanvas-end">
             <div class="offcanvas-header border-bottom">
-              <h5 class="offcanvas-title">Menu</h5>
+              <h5 class="offcanvas-title text-green">CEZAP</h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+
+                <li><a href="index.html" class="nav-link">Naslovna</a></li>
+
                 <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Landings</a>
-                  <div class="dropdown-menu p-0">
-                    <div class="d-lg-flex">
-                      <div class="mega-dropdown-column bg-position-center bg-repeat-0 bg-size-cover rounded-3 rounded-end-0" style="background-image: url(assets/img/landings.jpg); margin: -1px;"></div>
-                      <div class="mega-dropdown-column pt-lg-3 pb-lg-4">
-                        <ul class="list-unstyled mb-0">
-                          <li><a href="index.html" class="dropdown-item">Template Intro Page</a></li>
-                          <li><a href="landing-mobile-app-showcase-v1.html" class="dropdown-item">Mobile App Showcase v.1</a></li>
-                          <li><a href="landing-mobile-app-showcase-v2.html" class="dropdown-item">Mobile App Showcase v.2</a></li>
-                          <li><a href="landing-saas-v1.html" class="dropdown-item">SaaS v.1</a></li>
-                          <li><a href="landing-saas-v2.html" class="dropdown-item">SaaS v.2</a></li>
-                          <li><a href="landing-saas-v3.html" class="dropdown-item">SaaS v.3</a></li>
-                          <li><a href="landing-financial.html" class="dropdown-item">Financial Consulting</a></li>
-                          <li><a href="landing-online-courses.html" class="dropdown-item">Online Courses</a></li>
-                        </ul>
-                      </div>
-                      <div class="mega-dropdown-column pt-lg-3 pb-lg-4">
-                        <ul class="list-unstyled mb-0">
-                          <li><a href="landing-medical.html" class="dropdown-item">Medical</a></li>
-                          <li><a href="landing-software-company.html" class="dropdown-item">IT (Software) Company</a></li>
-                          <li><a href="landing-conference.html" class="dropdown-item">Conference</a></li>
-                          <li><a href="landing-digital-agency.html" class="dropdown-item">Digital Agency</a></li>
-                          <li><a href="landing-blog.html" class="dropdown-item">Blog Homepage</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Fer sa potrošačem</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="account-details.html" class="dropdown-item">Account Details</a></li>
+                    <li><a href="account-security.html" class="dropdown-item">Security</a></li>
+                    <li><a href="account-notifications.html" class="dropdown-item">Notifications</a></li>
+                    <li><a href="account-messages.html" class="dropdown-item">Messages</a></li>
+                    <li><a href="account-saved-items.html" class="dropdown-item">Saved Items</a></li>
+                    <li><a href="account-collections.html" class="dropdown-item">My Collections</a></li>
+                    <li><a href="account-payment.html" class="dropdown-item">Payment Details</a></li>
+                    <li><a href="account-signin.html" class="dropdown-item">Sign In</a></li>
+                    <li><a href="account-signup.html" class="dropdown-item">Sign Up</a></li>
+                  </ul>
                 </li>
+
                 <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Online rješavanje spora</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="account-details.html" class="dropdown-item">Account Details</a></li>
+                    <li><a href="account-security.html" class="dropdown-item">Security</a></li>
+                    <li><a href="account-notifications.html" class="dropdown-item">Notifications</a></li>
+                    <li><a href="account-messages.html" class="dropdown-item">Messages</a></li>
+                    <li><a href="account-saved-items.html" class="dropdown-item">Saved Items</a></li>
+                    <li><a href="account-collections.html" class="dropdown-item">My Collections</a></li>
+                    <li><a href="account-payment.html" class="dropdown-item">Payment Details</a></li>
+                    <li><a href="account-signin.html" class="dropdown-item">Sign In</a></li>
+                    <li><a href="account-signup.html" class="dropdown-item">Sign Up</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Prava potrošača</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="account-details.html" class="dropdown-item">Account Details</a></li>
+                    <li><a href="account-security.html" class="dropdown-item">Security</a></li>
+                    <li><a href="account-notifications.html" class="dropdown-item">Notifications</a></li>
+                    <li><a href="account-messages.html" class="dropdown-item">Messages</a></li>
+                    <li><a href="account-saved-items.html" class="dropdown-item">Saved Items</a></li>
+                    <li><a href="account-collections.html" class="dropdown-item">My Collections</a></li>
+                    <li><a href="account-payment.html" class="dropdown-item">Payment Details</a></li>
+                    <li><a href="account-signin.html" class="dropdown-item">Sign In</a></li>
+                    <li><a href="account-signup.html" class="dropdown-item">Sign Up</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projekti</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="account-details.html" class="dropdown-item">Account Details</a></li>
+                    <li><a href="account-security.html" class="dropdown-item">Security</a></li>
+                    <li><a href="account-notifications.html" class="dropdown-item">Notifications</a></li>
+                    <li><a href="account-messages.html" class="dropdown-item">Messages</a></li>
+                    <li><a href="account-saved-items.html" class="dropdown-item">Saved Items</a></li>
+                    <li><a href="account-collections.html" class="dropdown-item">My Collections</a></li>
+                    <li><a href="account-payment.html" class="dropdown-item">Payment Details</a></li>
+                    <li><a href="account-signin.html" class="dropdown-item">Sign In</a></li>
+                    <li><a href="account-signup.html" class="dropdown-item">Sign Up</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">CEZAP</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="about-v1.html" class="dropdown-item">O nama</a></li>
+                    <li><a href="account-details.html" class="dropdown-item">Account Details</a></li>
+                    <li><a href="account-security.html" class="dropdown-item">Security</a></li>
+                    <li><a href="account-notifications.html" class="dropdown-item">Notifications</a></li>
+                    <li><a href="account-messages.html" class="dropdown-item">Messages</a></li>
+                    <li><a href="account-saved-items.html" class="dropdown-item">Saved Items</a></li>
+                    <li><a href="account-collections.html" class="dropdown-item">My Collections</a></li>
+                    <li><a href="account-payment.html" class="dropdown-item">Payment Details</a></li>
+                    <li><a href="account-signin.html" class="dropdown-item">Sign In</a></li>
+                    <li><a href="account-signup.html" class="dropdown-item">Sign Up</a></li>
+                  </ul>
+                </li>
+
+                <!-- <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                   <div class="dropdown-menu">
                     <div class="d-lg-flex pt-lg-3">
                       <div class="mega-dropdown-column">
@@ -252,48 +188,25 @@
                       </div>
                     </div>
                   </div>
-                </li>
-                <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Account</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="account-details.html" class="dropdown-item">Account Details</a></li>
-                    <li><a href="account-security.html" class="dropdown-item">Security</a></li>
-                    <li><a href="account-notifications.html" class="dropdown-item">Notifications</a></li>
-                    <li><a href="account-messages.html" class="dropdown-item">Messages</a></li>
-                    <li><a href="account-saved-items.html" class="dropdown-item">Saved Items</a></li>
-                    <li><a href="account-collections.html" class="dropdown-item">My Collections</a></li>
-                    <li><a href="account-payment.html" class="dropdown-item">Payment Details</a></li>
-                    <li><a href="account-signin.html" class="dropdown-item">Sign In</a></li>
-                    <li><a href="account-signup.html" class="dropdown-item">Sign Up</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a href="components/typography.html" class="nav-link">UI Kit</a>
-                </li>
-                <li class="nav-item">
-                  <a href="docs/getting-started.html" class="nav-link">Docs</a>
-                </li>
+                </li> -->
+
+                <!-- <li class="nav-item"><a href="components/typography.html" class="nav-link">UI Kit</a></li> -->
+
+                <!-- <li class="nav-item"><a href="docs/getting-started.html" class="nav-link">Docs</a></li> -->
               </ul>
-            </div>
+
+            </div> 
             <div class="offcanvas-header border-top">
-              <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary w-100" target="_blank" rel="noopener">
-                <i class="bx bx-cart fs-4 lh-1 me-1"></i>
-                &nbsp;Buy now
+              <a href="kontakt.html" class="btn btn-primary text-white w-100" target="_blank" rel="noopener">
+                KONTAKT
               </a>
             </div>      
           </div>
-          <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
-            <input type="checkbox" class="form-check-input" id="theme-mode">
-            <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
-            <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
-          </div>
+      
           <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" target="_blank" rel="noopener">
-            <i class="bx bx-cart fs-5 lh-1 me-1"></i>
-            &nbsp;Buy now
-          </a>
+          <a href="kontakt.html" class="btn btn-primary text-white text-uppercase btn-md fs-sm rounded d-none d-lg-inline-flex" target="_blank" rel="noopener">Kontakt</a>
         </div>
       </header>
 
@@ -302,93 +215,84 @@
       <section class="position-relative bg-secondary pt-5">
         <div class="container position-relative zindex-2 pt-5">
 
-          <!-- Breadcrumb -->
-          <nav class="pt-lg-4 pb-3 mb-2 mb-sm-3" aria-label="breadcrumb">
-            <ol class="breadcrumb mb-0">
-              <li class="breadcrumb-item">
-                <a href="index.html"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
-              </li>
-              <li class="breadcrumb-item active" aria-current="page">Contacts v.2</li>
-            </ol>
-          </nav>
-
           <div class="row">
 
             <!-- Contact links -->
             <div class="col-xl-4 col-lg-5 pb-4 pb-sm-5 mb-2 mb-sm-0">
               <div class="pe-lg-4 pe-xl-0">
-                <h1 class="pb-3 pb-md-4 mb-lg-5">Contact Us</h1>
+                <h1 class="pb-3 text-primary border-bottom pb-md-4 mb-lg-5">Kontaktirajte nas</h1>
                 <div class="d-flex align-items-start pb-3 mb-sm-1 mb-md-3">
-                  <div class="bg-light text-primary rounded-circle flex-shrink-0 fs-3 lh-1 p-3">
+                  <div class="bg-success text-light rounded-circle flex-shrink-0 fs-3 lh-1 p-3">
                     <i class="bx bx-envelope"></i>
                   </div>
                   <div class="ps-3 ps-sm-4">
-                    <h2 class="h4 pb-1 mb-2">Email us</h2>
+                    <h2 class="h4 text-primary pb-1 mb-2">E-mail</h2>
                     <p class="mb-2">Please feel free to drop us a line. We will respond as soon as possible.</p>
-                    <div class="btn btn-link btn-lg px-0">
+                    <!-- <div class="btn btn-link btn-lg px-0">
                       Leave a message
+                      <i class="bx bx-right-arrow-alt lead ms-2"></i>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="d-flex align-items-start">
+                  <div class="bg-success text-light rounded-circle flex-shrink-0 fs-3 lh-1 p-3">
+                    <i class="bx bx-group"></i>
+                  </div>
+                  <div class="ps-3 ps-sm-4">
+                    <h2 class="h4 pb-1 mb-2">Prijavite nepravilnost</h2>
+                    <p class="mb-2">Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</p>
+                    <div class="btn btn-link btn-lg px-0">
+                      <a href="#" class="text-decoration-none text-primary">Send an application</a>
                       <i class="bx bx-right-arrow-alt lead ms-2"></i>
                     </div>
                   </div>
                 </div>
-                <div class="d-flex align-items-start">
-                  <div class="bg-light text-primary rounded-circle flex-shrink-0 fs-3 lh-1 p-3">
-                    <i class="bx bx-group"></i>
-                  </div>
-                  <div class="ps-3 ps-sm-4">
-                    <h2 class="h4 pb-1 mb-2">Careers</h2>
-                    <p class="mb-2">Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</p>
-                    <div class="btn btn-link btn-lg px-0">
-                      Send an application
-                      <i class="bx bx-right-arrow-alt lead ms-2"></i>
-                    </div>
-                  </div>
+
+                <div class="d-flex pt-md-3 pt-xl-5">
+                  
+                  <a href="#" class="btn btn-icon btn-primary btn-facebook me-3">
+                    <i class="bx bxl-facebook"></i>
+                  </a>
+                  <a href="#" class="btn btn-icon btn-primary btn-instagram me-3">
+                    <i class="bx bxl-instagram"></i>
+                  </a>
+                  <a href="#" class="btn btn-icon btn-primary btn-twitter me-3">
+                    <i class="bx bxl-twitter"></i>
+                  </a>
+                  <a href="#" class="btn btn-icon btn-primary btn-youtube">
+                    <i class="bx bxl-youtube"></i>
+                  </a>
                 </div>
               </div>
             </div>
 
             <!-- Contact form -->
             <div class="col-xl-6 col-lg-7 offset-xl-2">
-              <div class="card border-light shadow-lg py-3 p-sm-4 p-md-5">
+              <div class="card border-dark shadow-lg py-3 p-sm-4 p-md-5">
                 <div class="bg-dark position-absolute top-0 start-0 w-100 h-100 rounded-3 d-none d-dark-mode-block"></div>
                 <div class="card-body position-relative zindex-2">
-                  <h2 class="card-title pb-3 mb-4">Get Online Consultation</h2>
+                  <h2 class="card-title text-primary pb-3 mb-4">Pošaljite vaš zahtjev</h2>
                   <form class="row g-4 needs-validation" novalidate>
                     <div class="col-12">
-                      <label for="fn" class="form-label fs-base">Full name</label>
+                      <label for="fn" class="form-label fs-base">Ime i prezime</label>
                       <input type="text" class="form-control form-control-lg" id="fn" required>
-                      <div class="invalid-feedback">Please enter your full name!</div>
+                      <div class="invalid-feedback">Unesite vaše ime i prezime</div>
                     </div>
                     <div class="col-12">
-                      <label for="email" class="form-label fs-base">Email address</label>
+                      <label for="email" class="form-label fs-base">E-mail adresa</label>
                       <input type="email" class="form-control form-control-lg" id="email" required>
                       <div class="invalid-feedback">Please provid a valid email address!</div>
                     </div>
                     <div class="col-12">
-                      <label for="specialist" class="form-label fs-base">Specialist</label>
-                      <select class="form-select form-select-lg" id="specialist" required>
-                        <option value="" selected disabled>Choose a specialist</option>
-                        <option value="Therapist">Therapist</option>
-                        <option value="Dentist">Dentist</option>
-                        <option value="Cardiologist">Cardiologist</option>
-                        <option value="Pediatrician">Pediatrician</option>
-                        <option value="Gynecologist">Gynecologist</option>
-                        <option value="Surgeon">Surgeon</option>
-                      </select>
-                      <div class="invalid-feedback">Choose a specialist from the list!</div>
+                      <label for="file-input" class="form-label fs-base">Priložite dokument</label>
+                      <input class="form-control" type="file" id="file-input">
                     </div>
-                    <div class="col-sm-6">
-                      <label for="date" class="form-label fs-base">Date</label>
-                      <input type="text" class="form-control form-control-lg" id="date" data-format='{"date": true, "datePattern": ["m", "d"]}' placeholder="mm/dd" required>
-                      <div class="invalid-feedback">Enter a date!</div>
-                    </div>
-                    <div class="col-sm-6">
-                      <label for="time" class="form-label fs-base">Time</label>
-                      <input type="text" class="form-control form-control-lg" id="time" data-format='{"time": true, "timePattern": ["h", "m"]}' placeholder="hh:mm" required>
-                      <div class="invalid-feedback">Enter a time!</div>
+                    <div class="col-12">
+                      <label for="textarea-input" class="form-label fs-base">Unesite poruku</label>
+                      <textarea class="form-control" name="" id="textarea-input" cols="30" rows="5"></textarea>
                     </div>
                     <div class="col-12 pt-2 pt-sm-3">
-                      <button type="submit" class="btn btn-lg btn-primary w-100 w-sm-auto">Make an appointment</button>
+                      <button type="submit" class="btn btn-lg btn-primary w-100 w-sm-auto">POŠALJI</button>
                     </div>
                   </form>
                 </div>
