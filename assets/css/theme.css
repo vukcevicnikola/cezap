@@ -36,7 +36,7 @@
   --si-gray-800: #33354d;
   --si-gray-900: #0b0f19;
   --si-primary: #1e5184;
-  --si-secondary: #70c046;
+  --si-secondary: #3f851f;
   --si-light-blue: #7585a9;
   --si-success: #22c55e;
   --si-info: #4c82f7;
@@ -45,7 +45,7 @@
   --si-light: #fff;
   --si-dark: #0b0f19;
   --si-primary-rgb: 30, 81, 132;
-  --si-secondary-rgb: 112, 192, 70;
+  --si-secondary-rgb: 63, 133, 31;
   --si-light-blue-rgb: 117, 133, 169;
   --si-success-rgb: 34, 197, 94;
   --si-info-rgb: 76, 130, 247;
@@ -2796,20 +2796,20 @@ textarea.form-control-lg {
 }
 
 .btn-secondary {
-  --si-btn-color: #000;
-  --si-btn-bg: #70c046;
-  --si-btn-border-color: #70c046;
-  --si-btn-hover-color: #000;
-  --si-btn-hover-bg: #85c962;
-  --si-btn-hover-border-color: #7ec659;
-  --si-btn-focus-shadow-rgb: 95, 163, 60;
-  --si-btn-active-color: #000;
-  --si-btn-active-bg: #8dcd6b;
-  --si-btn-active-border-color: #7ec659;
+  --si-btn-color: #fff;
+  --si-btn-bg: #3f851f;
+  --si-btn-border-color: #3f851f;
+  --si-btn-hover-color: #fff;
+  --si-btn-hover-bg: #36711a;
+  --si-btn-hover-border-color: #326a19;
+  --si-btn-focus-shadow-rgb: 92, 151, 65;
+  --si-btn-active-color: #fff;
+  --si-btn-active-bg: #326a19;
+  --si-btn-active-border-color: #2f6417;
   --si-btn-active-shadow: unset;
-  --si-btn-disabled-color: #000;
-  --si-btn-disabled-bg: #70c046;
-  --si-btn-disabled-border-color: #70c046;
+  --si-btn-disabled-color: #fff;
+  --si-btn-disabled-bg: #3f851f;
+  --si-btn-disabled-border-color: #3f851f;
 }
 
 .btn-light-blue {
@@ -2948,17 +2948,17 @@ textarea.form-control-lg {
 }
 
 .btn-outline-secondary {
-  --si-btn-color: #70c046;
-  --si-btn-border-color: #70c046;
-  --si-btn-hover-color: #000;
-  --si-btn-hover-bg: #70c046;
-  --si-btn-hover-border-color: #70c046;
-  --si-btn-focus-shadow-rgb: 112, 192, 70;
-  --si-btn-active-color: #000;
-  --si-btn-active-bg: #70c046;
-  --si-btn-active-border-color: #70c046;
+  --si-btn-color: #3f851f;
+  --si-btn-border-color: #3f851f;
+  --si-btn-hover-color: #fff;
+  --si-btn-hover-bg: #3f851f;
+  --si-btn-hover-border-color: #3f851f;
+  --si-btn-focus-shadow-rgb: 63, 133, 31;
+  --si-btn-active-color: #fff;
+  --si-btn-active-bg: #3f851f;
+  --si-btn-active-border-color: #3f851f;
   --si-btn-active-shadow: unset;
-  --si-btn-disabled-color: #70c046;
+  --si-btn-disabled-color: #3f851f;
   --si-btn-disabled-bg: transparent;
   --si-gradient: none;
 }
@@ -4634,12 +4634,12 @@ textarea.form-control-lg {
 }
 
 .alert-secondary {
-  --si-alert-color: #65ad3f;
-  --si-alert-bg: #f1f9ed;
-  --si-alert-border-color: #b8e0a3;
+  --si-alert-color: #39781c;
+  --si-alert-bg: #ecf3e9;
+  --si-alert-border-color: #9fc28f;
 }
 .alert-secondary .alert-link {
-  color: #518a32;
+  color: #2e6016;
 }
 
 .alert-light-blue {
@@ -6129,8 +6129,8 @@ textarea.form-control-lg {
 }
 
 .text-bg-secondary {
-  color: #000 !important;
-  background-color: RGBA(112, 192, 70, var(--si-bg-opacity, 1)) !important;
+  color: #fff !important;
+  background-color: RGBA(63, 133, 31, var(--si-bg-opacity, 1)) !important;
 }
 
 .text-bg-light-blue {
@@ -6176,10 +6176,10 @@ textarea.form-control-lg {
 }
 
 .link-secondary {
-  color: #70c046 !important;
+  color: #3f851f !important;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: #8dcd6b !important;
+  color: #326a19 !important;
 }
 
 .link-light-blue {
@@ -7777,7 +7777,7 @@ textarea.form-control-lg {
 }
 
 .text-secondary {
-  color: #70c046 !important;
+  color: #3f851f !important;
 }
 
 .text-light-blue {
@@ -12309,10 +12309,10 @@ html:not([dir=rtl]) .range-slider-ui.noUi-horizontal .noUi-handle {
 .btn-secondary {
   --si-btn-hover-color: #fff;
   --si-btn-active-color: #fff;
-  --si-btn-hover-bg: #5fa739;
-  --si-btn-active-bg: #5fa739;
-  --si-btn-hover-border-color: #5fa739;
-  --si-btn-active-border-color: #5fa739;
+  --si-btn-hover-bg: #306618;
+  --si-btn-active-bg: #306618;
+  --si-btn-hover-border-color: #306618;
+  --si-btn-active-border-color: #306618;
   --si-btn-disabled-color: #fff;
 }
 
@@ -14066,7 +14066,7 @@ a.badge {
 }
 
 .alert-secondary {
-  --si-alert-bg: #73c14a;
+  --si-alert-bg: #418920;
 }
 
 .alert-secondary,
@@ -16049,8 +16049,8 @@ img-comparison-slider:focus {
   --si-alert-border-color: rgba(30, 81, 132, .25);
 }
 .dark-mode .alert-secondary {
-  --si-alert-bg: rgba(112, 192, 70, .05);
-  --si-alert-border-color: rgba(112, 192, 70, .25);
+  --si-alert-bg: rgba(63, 133, 31, .05);
+  --si-alert-border-color: rgba(63, 133, 31, .25);
 }
 .dark-mode .alert-light-blue {
   --si-alert-bg: rgba(117, 133, 169, .05);
